@@ -1,273 +1,1 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Idealizando Gestão</title>
-    <meta name="description" content="Sistema de gestão simples e objetivo para Varejo e Serviços. De empreendedor para empreendedor.">
-    
-    <!-- Tailwind CSS (Via CDN para não precisar instalar nada) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Ícones (FontAwesome) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Animate On Scroll (Animações de entrada) -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <style>
-        /* Ajustes finos */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        .gradient-text {
-            background: linear-gradient(to right, #60a5fa, #a855f7);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .hero-bg {
-            background-color: #0f172a;
-            background-image: radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
-        }
-    </style>
-</head>
-<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
-
-    <!-- NAVBAR -->
-    <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-700">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-layer-group text-blue-500 text-2xl"></i>
-                    <span class="font-bold text-lg md:text-xl text-white tracking-tight leading-tight">
-                        Idealizando <span class="text-blue-500"> Gestão Empresarial</span>
-                    </span>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#diferenciais" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Diferenciais</a>
-                        <a href="#hibrido" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">O Sistema</a>
-                        <a href="#depoimento" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Origem</a>
-                    </div>
-                </div>
-                <div>
-                    <a href="https://wa.me/5515988086935?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20sistema%20Idealizando%21" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full font-bold text-sm transition shadow-lg shadow-blue-500/30">
-                        Agendar Demo
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- HERO SECTION (Impacto) -->
-    <section class="hero-bg min-h-screen flex items-center pt-24 pb-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
-            
-            <!-- Texto Hero -->
-            <div class="flex-1 text-center md:text-left" data-aos="fade-up">
-                <div class="inline-block bg-slate-800 rounded-full px-4 py-1 text-sm font-semibold text-blue-400 mb-6 border border-slate-700">
-                    De empreendedor para empreendedor
-                </div>
-                <h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-6">
-                    A gestão do seu negócio <br />
-                    <span class="gradient-text">Híbrido e Real.</span>
-                </h1>
-                <p class="text-lg text-slate-400 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0">
-                    Pare de pagar caro em sistemas complexos que você não usa. 
-                    Controle <strong>Produtos e Serviços</strong> no mesmo lugar, com a simplicidade que o seu dia a dia exige.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="https://wa.me/5515988086935?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20sistema%20Idealizando%21" target="_blank" class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition transform hover:scale-105 shadow-xl">
-                        Quero conhecer agora <i class="fa-solid fa-arrow-right ml-2"></i>
-                    </a>
-                </div>
-                <p class="mt-4 text-sm text-slate-500">
-                    <i class="fa-solid fa-check text-green-500 mr-1"></i> Sem fidelidade
-                    <i class="fa-solid fa-check text-green-500 mr-1 ml-4"></i> Suporte humanizado
-                </p>
-            </div>
-
-            <!-- Imagem Hero (MOCKUP) -->
-            <div class="flex-1 relative w-full" data-aos="fade-left" data-aos-delay="200">
-                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-30 animate-pulse"></div>
-                <!-- IMAGEM DO GOOGLE DRIVE CONVERTIDA -->
-                <img src="img/topo.png" alt="Sistema Idealizando Gestão" class="relative rounded-2xl shadow-2xl border border-slate-700 w-full object-cover transform rotate-1 hover:rotate-0 transition duration-500">
-                
-                <!-- Card Flutuante -->
-                <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">
-                    <div class="bg-green-100 p-2 rounded-full text-green-600">
-                        <i class="fa-solid fa-dollar-sign text-xl"></i>
-                    </div>
-                    <div>
-                        <p class="text-xs text-gray-500 font-bold uppercase">Lucro Real</p>
-                        <p class="text-lg font-bold text-gray-800">Visão Clara</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- A DOR VS SOLUÇÃO -->
-    <section id="diferenciais" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl font-bold text-slate-900">Por que o Idealizando é diferente?</h2>
-                <p class="mt-4 text-slate-600 max-w-2xl mx-auto">A maioria dos sistemas foi feito por programadores que nunca venderam no balcão. O nosso foi feito vivendo a realidade.</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center text-red-600 mb-4 text-xl">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2">Outros Sistemas</h3>
-                    <ul class="space-y-2 text-slate-600 text-sm">
-                        <li class="flex items-center"><i class="fa-solid fa-circle-xmark text-red-400 mr-2"></i> Cheio de botões inúteis.</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-xmark text-red-400 mr-2"></i> Separa produto de serviço.</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-xmark text-red-400 mr-2"></i> Relatórios confusos.</li>
-                    </ul>
-                </div>
-
-                <!-- Card 2 (O Nosso) -->
-                <div class="bg-slate-900 text-white p-8 rounded-2xl shadow-xl transform md:-translate-y-4 border border-blue-500 relative" data-aos="fade-up" data-aos-delay="200">
-                    <div class="absolute top-0 right-0 bg-blue-600 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">RECOMENDADO</div>
-                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-4 text-xl">
-                        <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2">Idealizando Gestão</h3>
-                    <ul class="space-y-3 text-slate-300 text-sm">
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-400 mr-2"></i> Fluxo Híbrido (Produto + Serviço).</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-400 mr-2"></i> Estoque Inteligente.</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-400 mr-2"></i> Marketing Integrado (WhatsApp).</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-400 mr-2"></i> Programa de Pontos Flexível.</li>
-                    </ul>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 mb-4 text-xl">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2">O Resultado</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Você gasta menos tempo no computador e mais tempo cuidando do seu cliente. Você vê a cor do dinheiro no final do mês.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FEATURE HÍBRIDA (O Grande Diferencial) -->
-    <section id="hibrido" class="py-20 bg-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center gap-16">
-                <div class="flex-1 w-full" data-aos="fade-right">
-                    <!-- IMAGEM DO GOOGLE DRIVE CONVERTIDA -->
-                    <img src="img/hibrido.png" alt="Venda Híbrida" class="rounded-2xl shadow-2xl w-full object-cover">
-                </div>
-                <div class="flex-1" data-aos="fade-left">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Barbearia que vende pomada? Loja que faz conserto?</h2>
-                    <p class="text-lg text-slate-600 mb-6">
-                        Sabemos que o negócio moderno é misto. No Idealizando, você lança o <strong>Corte de Cabelo</strong> e a <strong>Pomada</strong> na mesma venda.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div class="bg-white p-2 rounded shadow-sm mr-4 text-blue-600"><i class="fa-solid fa-cube"></i></div>
-                            <div>
-                                <h4 class="font-bold text-slate-800">Estoque Blindado</h4>
-                                <p class="text-sm text-slate-600">O sistema baixa o produto e contabiliza o serviço separadamente, sem você fazer contas.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="bg-white p-2 rounded shadow-sm mr-4 text-purple-600"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-                            <div>
-                                <h4 class="font-bold text-slate-800">Fidelidade Automática</h4>
-                                <p class="text-sm text-slate-600">Seu cliente acumula pontos na hora e você gera vouchers personalizados.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FUNCIONALIDADES EXTRAS -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-slate-900 mb-12">Muito mais que um PDV</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="p-6 rounded-xl bg-slate-50 hover:bg-blue-50 transition" data-aos="zoom-in">
-                    <i class="fa-brands fa-whatsapp text-4xl text-green-500 mb-4"></i>
-                    <h3 class="font-bold mb-2">Marketing Zap</h3>
-                    <p class="text-xs text-slate-500">Gerador de cartões sazonais (Natal, Pais, Mães) para enviar aos clientes.</p>
-                </div>
-                <div class="p-6 rounded-xl bg-slate-50 hover:bg-blue-50 transition" data-aos="zoom-in" data-aos-delay="100">
-                    <i class="fa-solid fa-chart-pie text-4xl text-blue-500 mb-4"></i>
-                    <h3 class="font-bold mb-2">Financeiro Real</h3>
-                    <p class="text-xs text-slate-500">Saiba exatamente seu Lucro Líquido, não apenas o faturamento bruto.</p>
-                </div>
-                <div class="p-6 rounded-xl bg-slate-50 hover:bg-blue-50 transition" data-aos="zoom-in" data-aos-delay="200">
-                    <i class="fa-solid fa-file-invoice-dollar text-4xl text-yellow-500 mb-4"></i>
-                    <h3 class="font-bold mb-2">Orçamentos</h3>
-                    <p class="text-xs text-slate-500">Crie propostas profissionais e gere PDFs/Imagens na hora.</p>
-                </div>
-                <div class="p-6 rounded-xl bg-slate-50 hover:bg-blue-50 transition" data-aos="zoom-in" data-aos-delay="300">
-                    <i class="fa-solid fa-user-clock text-4xl text-purple-500 mb-4"></i>
-                    <h3 class="font-bold mb-2">Reativação</h3>
-                    <p class="text-xs text-slate-500">O sistema avisa quem sumiu e te ajuda a trazer o cliente de volta.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- DE EMPREENDEDOR PARA EMPREENDEDOR -->
-    <section id="depoimento" class="py-20 bg-slate-900 relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-full opacity-10">
-            <i class="fa-solid fa-quote-right text-[400px] text-white absolute -top-20 -right-20"></i>
-        </div>
-        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-            <!-- TEXTO CORRIGIDO -->
-            <h2 class="text-3xl font-bold text-white mb-8">A Verdade Nua e Crua</h2>
-            <p class="text-xl md:text-2xl text-slate-300 italic leading-relaxed mb-8">
-                "Eu criei o Idealizando Gestão Empresarial porque cansei de ver pequenos empreendedores perdidos em planilhas ou pagando fortunas em sistemas que exigiam um curso da NASA para operar. <br><br>
-                Aqui a gente fala a sua língua. É abrir, vender e lucrar."
-            </p>
-            <div class="flex items-center justify-center gap-4">
-                <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-2xl">
-                    IGE
-                </div>
-                <div class="text-left">
-                    <p class="text-white font-bold">Idealizando Gestão Empresarial</p>
-                    <p class="text-blue-400 text-sm">Desenvolvedor do Projeto - Rodrigo Cavalcanti</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA FINAL -->
-    <section class="py-20 bg-gradient-to-br from-blue-600 to-purple-700 text-center px-4">
-        <h2 class="text-3xl md:text-5xl font-black text-white mb-6">Assuma o controle hoje.</h2>
-        <p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-            Sem cartão de crédito, sem contrato de fidelidade. Apenas a ferramenta que faltava para o seu empreendiemnto evoluir com você sempre no controle.
-        </p>
-        <a href="https://wa.me/5515988086935?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20sistema%20Idealizando%21" target="_blank" class="inline-block bg-white text-blue-700 font-bold text-xl px-10 py-4 rounded-full shadow-2xl hover:bg-gray-100 transition transform hover:-translate-y-1">
-            <i class="fa-brands fa-whatsapp mr-2"></i> Agendar Apresentação
-        </a>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-slate-950 text-slate-500 py-8 text-center text-sm border-t border-slate-800">
-        <p>&copy; 2025 Grupo Idealizando. Todos os direitos reservados.</p>
-        <p class="mt-2">Feito para o varejo e serviços.</p>
-    </footer>
-
-    <!-- Scripts de Animação -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true,
-        });
-    </script>
-</body>
-</html>
+<!DOCTYPE html><html lang="pt-BR" class="scroll-smooth"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Idealizando Gestão Empresarial</title>    <meta name="description" content="Sistema de gestão simples e objetivo para Varejo e Serviços. De empreendedor para empreendedor.">        <!-- Tailwind CSS (Via CDN para não precisar instalar nada) -->    <script src="https://cdn.tailwindcss.com"></script>        <!-- Ícones (FontAwesome) -->    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    <!-- Animate On Scroll (Animações de entrada) -->    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    <style>        /* Ajustes finos */        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');        body { font-family: 'Inter', sans-serif; }        .gradient-text {            background: linear-gradient(to right, #60a5fa, #a855f7);            -webkit-background-clip: text;            -webkit-text-fill-color: transparent;        }        .hero-bg {            background-color: #0f172a;            background-image: radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);        }    </style></head><body class="bg-slate-50 text-slate-900 overflow-x-hidden">    <!-- NAVBAR -->    <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-700">        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">            <div class="flex items-center justify-between h-16">                <div class="flex items-center gap-2">                    <i class="fa-solid fa-layer-group text-blue-500 text-2xl"></i>                    <span class="font-bold text-lg md:text-xl text-white tracking-tight leading-tight">                        Idealizando <span class="text-blue-500"> Gestão Empresarial</span>                    </span>                </div>                                <div class="hidden md:block">                    <div class="ml-10 flex items-baseline space-x-4">                        <a href="#diferenciais" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Diferenciais</a>                        <a href="#hibrido" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">O Sistema</a>                        <a href="#depoimento" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Origem</a>                    </div>                </div>                                <!-- CORREÇÃO APLICADA: Botão oculto no mobile (hidden md:block) -->                <div class="hidden md:block">                    <a href="https://wa.me/5515988086935?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20sistema%20Idealizando%21" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full font-bold text-sm transition shadow-lg shadow-blue-500/30">                        Agendar Demo                    </a>                </div>            </div>        </div>    </nav>    <!-- HERO SECTION (Impacto) -->    <section class="hero-bg min-h-screen flex items-center pt-24 pb-12">        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">                        <!-- Texto Hero -->            <div class="flex-1 text-center md:text-left" data-aos="fade-up">                <div class="inline-block bg-slate-800 rounded-full px-4 py-1 text-sm font-semibold text-blue-400 mb-6 border border-slate-700">                    De empreendedor para empreendedor                </div>                <h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-6">                    A gestão do seu negócio <br />                    <span class="gradient-text">Híbrido e Real.</span>                </h1>                <p class="text-lg text-slate-400 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0">                    Pare de pagar caro em sistemas complexos que você não usa.                     Controle <strong>Produtos e Serviços</strong> no mesmo lugar, com a simplicidade que o seu dia a dia exige.                </p>                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">                    <a href="https://wa.me/5515988086935?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20sistema%20Idealizando%21" target="_blank" class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition transform hover:scale-105 shadow-xl">                        Quero conhecer agora <i class="fa-solid fa-arrow-right ml-2"></i>                    </a>                </div>                <p class="mt-4 text-sm text-slate-500">                    <i class="fa-solid fa-check text-green-500 mr-1"></i> Sem fidelidade                    <i class="fa-solid fa-check text-green-500 mr-1 ml-4"></i> Suporte humanizado                </p>            </div>            <!-- Imagem Hero (MOCKUP) -->            <div class="flex-1 relative w-full" data-aos="fade-left" data-aos-delay="200">                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-30 animate-pulse"></div>                <!-- IMAGEM -->                <img src="img/topo.png" alt="Sistema Idealizando Gestão" class="relative rounded-2xl shadow-2xl border border-slate-700 w-full object-cover transform rotate-1 hover:rotate-0 transition duration-500">                                <!-- Card Flutuante -->                <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">                    <div class="bg-green-100 p-2 rounded-full text-green-600">                        <i class="fa-solid fa-dollar-sign text-xl"></i>                    </div>                    <div>                        <p class="text-xs text-gray-500 font-bold uppercase">Lucro Real</p>                        <p class="text-lg font-bold text-gray-800">Visão Clara</p>                    </div>                </div>            </div>        </div>    </section>    <!-- A DOR VS SOLUÇÃO -->    <section id="diferenciais" class="py-20 bg-white">        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">            <div class="text-center mb-16" data-aos="fade-up">                <h2 class="text-3xl font-bold text-slate-900">Por que o Idealizando é diferente?</h2>                <p class="mt-4 text-slate-600 max-w-2xl mx-auto">A maioria dos sistemas foi feito por programadores que nunca venderam no balcão. O nosso foi feito vivendo a realidade.</p>            </div>            <div class="grid md:grid-cols-3 gap-8">                <!-- Card 1 -->                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center text-red-600 mb-4 text-xl">                        <i class="fa-solid fa-xmark"></i>                    </div>                    <h3 class="font-bold text-xl mb-2">Outros Sistemas</h3>                    <ul class="space-y-2 text-slate-600 text-sm">                        <li class="flex items-center"><i class="fa-solid fa-circle-xmark text-red-400 mr-2"></i> Cheio de botões inúteis.</li>                        <li class="flex items-center"><i class="fa-solid fa-circle-xmark text-red-400 mr-2"></i> Separa produto de serviço.</li>                        <li class="flex items-center"><i class="fa-solid fa-circle-xmark text-red-400 mr-2"></i> Relatórios confusos.</li>                    </ul>                </div>                <!-- Card 2 (O Nosso) -->                <div class="bg-slate-900 text-white p-8 rounded-2xl shadow-xl transform md:-translate-y-4 border border-blue-500 relative" data-aos="fade-up" data-aos-delay="200">                    <div class="absolute top-0 right-0 bg-blue-600 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">RECOMENDADO</div>                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-4 text-xl">                        <i class="fa-solid fa-check"></i>                    </div>                    <h3 class="font-bold text-xl mb-2">Idealizando Gestão</h3>                    <ul class="space-y-3 text-slate-300 text-sm">                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-400 mr-2"></i> Fluxo Híbrido (Produto + Serviço).</li>                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-400 mr-2"></i> Estoque Inteligente.</li>                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-400 mr-2"></i> Marketing Integrado (WhatsApp).</li>                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-400 mr-2"></i> Programa de Pontos Flexível.</li>                    </ul>                </div>                <!-- Card 3 -->                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="300">                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 mb-4 text-xl">                        <i class="fa-solid fa-heart"></i>                    </div>                    <h3 class="font-bold text-xl mb-2">O Resultado</h3>                    <p class="text-slate-600 text-sm leading-relaxed">                        Você gasta menos tempo no computador e mais tempo cuidando do seu cliente. Você vê a cor do dinheiro no final do mês.                    </p>                </div>            </div>        </div>    </section>    <!-- FEATURE HÍBRIDA (O Grande Diferencial) -->    <section id="hibrido" class="py-20 bg-slate-100">        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">            <div class="flex flex-col md:flex-row items-center gap-16">                <div class="flex-1 w-full" data-aos="fade-right">                    <!-- IMAGEM -->                    <img src="img/hibrido.png" alt="Venda Híbrida" class="rounded-2xl shadow-2xl w-full object-cover">                </div>                <div class="flex-1" data-aos="fade-left">                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Barbearia que vende pomada? Loja que faz conserto?</h2>                    <p class="text-lg text-slate-600 mb-6">                        Sabemos que o negócio moderno é misto. No Idealizando, você lança o <strong>Corte de Cabelo</strong> e a <strong>Pomada</strong> na mesma venda.                    </p>                    <div class="space-y-4">                        <div class="flex items-start">                            <div class="bg-white p-2 rounded shadow-sm mr-4 text-blue-600"><i class="fa-solid fa-cube"></i></div>                            <div>                                <h4 class="font-bold text-slate-800">Estoque Blindado</h4>                                <p class="text-sm text-slate-600">O sistema baixa o produto e contabiliza o serviço separadamente, sem você fazer contas.</p>                            </div>                        </div>                        <div class="flex items-start">                            <div class="bg-white p-2 rounded shadow-sm mr-4 text-purple-600"><i class="fa-solid fa-wand-magic-sparkles"></i></div>                            <div>                                <h4 class="font-bold text-slate-800">Fidelidade Automática</h4>                                <p class="text-sm text-slate-600">Seu cliente acumula pontos na hora e você gera vouchers personalizados.</p>                            </div>                        </div>                    </div>                </div>            </div>        </div>    </section>    <!-- FUNCIONALIDADES EXTRAS -->    <section class="py-20 bg-white">        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">            <h2 class="text-3xl font-bold text-slate-900 mb-12">Muito mais que um PDV</h2>            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">                <div class="p-6 rounded-xl bg-slate-50 hover:bg-blue-50 transition" data-aos="zoom-in">                    <i class="fa-brands fa-whatsapp text-4xl text-green-500 mb-4"></i>                    <h3 class="font-bold mb-2">Marketing Zap</h3>                    <p class="text-xs text-slate-500">Gerador de cartões sazonais (Natal, Pais, Mães) para enviar aos clientes.</p>                </div>                <div class="p-6 rounded-xl bg-slate-50 hover:bg-blue-50 transition" data-aos="zoom-in" data-aos-delay="100">                    <i class="fa-solid fa-chart-pie text-4xl text-blue-500 mb-4"></i>                    <h3 class="font-bold mb-2">Financeiro Real</h3>                    <p class="text-xs text-slate-500">Saiba exatamente seu Lucro Líquido, não apenas o faturamento bruto.</p>                </div>                <div class="p-6 rounded-xl bg-slate-50 hover:bg-blue-50 transition" data-aos="zoom-in" data-aos-delay="200">                    <i class="fa-solid fa-file-invoice-dollar text-4xl text-yellow-500 mb-4"></i>                    <h3 class="font-bold mb-2">Orçamentos</h3>                    <p class="text-xs text-slate-500">Crie propostas profissionais e gere PDFs/Imagens na hora.</p>                </div>                <div class="p-6 rounded-xl bg-slate-50 hover:bg-blue-50 transition" data-aos="zoom-in" data-aos-delay="300">                    <i class="fa-solid fa-user-clock text-4xl text-purple-500 mb-4"></i>                    <h3 class="font-bold mb-2">Reativação</h3>                    <p class="text-xs text-slate-500">O sistema avisa quem sumiu e te ajuda a trazer o cliente de volta.</p>                </div>            </div>        </div>    </section>    <!-- DE EMPREENDEDOR PARA EMPREENDEDOR -->    <section id="depoimento" class="py-20 bg-slate-900 relative overflow-hidden">        <div class="absolute top-0 left-0 w-full h-full opacity-10">            <i class="fa-solid fa-quote-right text-[400px] text-white absolute -top-20 -right-20"></i>        </div>        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">                        <h2 class="text-3xl font-bold text-white mb-8">A Verdade Nua e Crua</h2>                        <p class="text-xl md:text-2xl text-slate-300 italic leading-relaxed mb-8">                "Eu criei o Idealizando Gestão Empresarial porque cansei de ver pequenos empreendedores perdidos em planilhas ou pagando fortunas em sistemas que exigiam um curso da NASA para operar. <br><br>                Aqui a gente fala a sua língua. É abrir, vender e lucrar."            </p>            <div class="flex items-center justify-center gap-4">                <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-2xl">                    IGE                </div>                <div class="text-left">                    <p class="text-white font-bold">Idealizando Gestão Empresarial</p>                    <p class="text-blue-400 text-sm">Desenvolvedor do Projeto - Rodrigo Cavalcanti</p>                </div>            </div>        </div>    </section>    <!-- CTA FINAL -->    <section class="py-20 bg-gradient-to-br from-blue-600 to-purple-700 text-center px-4">        <h2 class="text-3xl md:text-5xl font-black text-white mb-6">Assuma o controle hoje.</h2>        <p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto">            Sem cartão de crédito, sem contrato de fidelidade. Apenas a ferramenta que faltava para o seu empreendimento evoluir com você sempre no controle.        </p>        <a href="https://wa.me/5515988086935?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20sistema%20Idealizando%21" target="_blank" class="inline-block bg-white text-blue-700 font-bold text-xl px-10 py-4 rounded-full shadow-2xl hover:bg-gray-100 transition transform hover:-translate-y-1">            <i class="fa-brands fa-whatsapp mr-2"></i> Agendar Apresentação        </a>    </section>    <!-- FOOTER -->    <footer class="bg-slate-950 text-slate-500 py-8 text-center text-sm border-t border-slate-800">        <p>&copy; 2025 Grupo Idealizando. Todos os direitos reservados.</p>        <p class="mt-2">Feito para o varejo e serviços.</p>    </footer>    <!-- Scripts de Animação -->    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    <script>        AOS.init({            duration: 800,            once: true,        });    </script></body></html>
